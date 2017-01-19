@@ -16,13 +16,12 @@
 
 
     vm.addTask = function () {
-      $state.go('index.addplan');
-
-      // var remote2 = remote;
-      // var exec = require('child_process').exec;
-      // exec("ls", function(error, stdout, stderr){ console.log(stdout); } );
+      $state.go('addplan');
     }
 
+    vm.execute = function () {
+      $state.go('execute');
+    }
 
   }
 

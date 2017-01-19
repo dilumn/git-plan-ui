@@ -3,15 +3,15 @@
 
     var routeConfig = function ($stateProvider) {
 
-        var addplan = {
-            url: "/addplan",
-            templateUrl: "scripts/app/addPlan/addPlan.html",
-            controller: "AddPlanController",
+        var execute = {
+            url: "/execute",
+            templateUrl: "scripts/app/execute/execute.html",
+            controller: "ExecuteController",
             controllerAs: "vm",
         };
 
 
-        $stateProvider.state("addplan", addplan);
+        $stateProvider.state("execute", execute);
     };
     routeConfig.$inject = ["$stateProvider"];
 
