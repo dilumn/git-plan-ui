@@ -1,12 +1,16 @@
 (function (angular) {
     'use strict';
     var addPlanController = function ($state, $scope) {
-        var vm = this;
+      var vm = this;
 
-        var initialize = function () {
-        }
+      var initialize = function () {
+      }
 
-        initialize();
+      vm.back = function () {
+        $state.go('index');
+      }
+
+      initialize();
     };
 
     addPlanController.$inject = ['$state', '$stateParams', '$scope'];
